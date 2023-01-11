@@ -4,15 +4,18 @@ html{
 
 
 .saxlogo{
-  width: 8rem;
+  width: 9rem;
 }
 
 .nave{
-  display: flex;
-  justify-content: space-evenly; 
+  display:flex ;
+  flex-flow: column;
+  align-items: center;
+
+  
   
 }
-.navigation{
+.navigation {
   display: flex;
   align-items: center;
   
@@ -21,5 +24,40 @@ html{
   margin-left: 1.5rem;
   text-decoration: none;
   cursor:pointer;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(99, 96, 96);
+}
+
+.goal,.leveltext h2 {
+
+  text-align:center;
+
+}
+
+.grade{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.textlevel {
+  width: 15rem;
+  text-align: justify;
+}
+.leveltitle{
+  text-align: center;
+}
+.classroom h2{
+  text-align: center;
+}
+
+.inside{
+  display: flex;
+}
+
+.rooms{
+  width: 300px;
+  height: 300px;
+  border: 2px solid   rgb(99, 96, 96);
+
 }
