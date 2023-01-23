@@ -5,12 +5,14 @@ html{
 
 .saxlogo{
   width: 9rem;
+  padding-left: 3rem;
 }
 
 .nave{
   display:flex ;
-  flex-flow: column;
+  flex-flow: row;
   align-items: center;
+  justify-content: space-between;
 
   
   
@@ -29,12 +31,30 @@ html{
   color: rgb(99, 96, 96);
 }
 
-.goal,.leveltext h2 {
 
-  text-align:center;
+.goal h2{
 
+  background-color: azure;
+  align-items: center;
+  opacity: .5;
+  
 }
-
+.goal,.leveltext h2 {;
+    text-align:center;
+}
+.saxpics{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: black;
+  padding: 8rem 0;
+ 
+  
+}
+.picssize{
+  width: 25rem;
+  height: 15rem;
+}
 .grade{
   display: flex;
   justify-content: space-evenly;
@@ -47,17 +67,74 @@ html{
 .leveltitle{
   text-align: center;
 }
-.classroom h2{
+.classroom h2 , h4{
   text-align: center;
 }
 
 .inside{
   display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: rgba(207, 189, 189, 0.226);
+}
+.professors{
+  display: flex;
+  justify-content: center;
+  justify-content:space-evenly;
+  background-color: rgb(111, 31, 31);
+  padding-top: 2rem;
+}
+.teacher:hover{
+  
+  width: 20rem;
+  height: 30rem;
 }
 
-.rooms{
-  width: 300px;
-  height: 300px;
+.picsrooms{
+  width: 15rem;
+  height: 15rem;
   border: 2px solid   rgb(99, 96, 96);
+  margin: 1rem;
 
 }
+.teacher{
+  width: 15rem;
+  height: 20rem;
+  border: 2px solid   rgb(206, 109, 109);
+  border-radius: .625rem 6.25rem/7.5rem;
+  
+
+}
+
+@media only screen and ( max-width:760px) {
+
+  .saxlogo{
+  width: 0;  
+  }
+
+.nave{
+  flex-flow: column ;
+}
+.saxpics{
+  flex-wrap: wrap;
+  
+}
+
+.grade{
+   flex-wrap: wrap;
+}
+  .inside{
+  flex-wrap: wrap;
+}  
+.professors{
+
+  flex-wrap: wrap;
+}
+.teacher:hover{
+  width:0rem;
+  height: 0rem;
+}
+
+}
+}
+
